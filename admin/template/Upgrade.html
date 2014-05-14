@@ -1,0 +1,28 @@
+<?php
+
+function goVersion ($url) {    
+       $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, $url);
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        $output = curl_exec($ch);
+
+        curl_close($ch);  
+
+return $output;
+}
+
+?>
+
+<div id="statistics">
+<h3>ترقية البرنامج</h3>
+
+<h5>  الإصدار الحالي => <?php echo $goVersion = file_get_contents('./../mghrd.txt');?></h5>
+<h5>  أخر إصدار متوفر => <?php echo $goVersion1 = goVersion("http://www.mghrd.com/mghrd.txt");?> </h5>
+<h5> <a href="http://www.mghrd.com/Released" >لتحميل الاصدرات الجديدة</a> </h5>
+<h5>هذي النسخة تم تطويرها بشكل مختلف  لذا لا يمكن تركيب جميع التحديثات عليها</h5>
+
+</div>
+

@@ -1,0 +1,33 @@
+    <form  action="twiT.php" method="POST" class="form-horizontal">
+
+    <div class="control-group">
+	<h3>  تغريدة جديدة مجدولة</h3>
+    <div class="controls">
+<select name="date" size="1">
+<option  value=" ">أختر القسم</option>" ;
+
+<?php
+require_once('./../config/dbconfig.php');
+$section = mysql_query("SELECT * FROM `section`") or die(mysql_error());
+
+while($rows = mysql_fetch_assoc($section))
+{
+
+echo '<option value="'.$rows['id'].'">'.$rows['name'].'</option>
+
+	';
+}
+?>
+
+</select>
+<h5 style="color:#CC0000">أفصل بين كل تغريدة وتغريدة بسطر فرغ</h5>
+
+    <textarea rows="10" id="tw" name="txtwi" placeholder="غرد هنا" ></textarea>
+    </div>
+    </div>
+    <div class="control-group">
+    <div class="controls">
+    <button  type="submit" class="btn">غرد للكل</button>
+    </div>
+    </div>
+    </form>

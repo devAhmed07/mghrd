@@ -1,0 +1,12 @@
+<?php
+$sql=mysql_query("select * from users") ;
+$row=mysql_num_rows($sql);
+?>
+<div id="statistics">
+<h3>إحصائيات</h3>
+
+<h5>  عدد المشتركين = <?php echo $row ; ?></h5>
+<h5>  عدد التغريدات = <?php echo $row ; ?></h5>
+
+
+</div>

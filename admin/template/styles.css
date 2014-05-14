@@ -1,0 +1,149 @@
+
+#logged{
+float: right;
+margin-top: 70px;
+
+}
+#logged1{
+float: right;
+}
+
+
+#index #header{
+width: 950px;
+height: 60px;	
+border: 1px solid #C0DEED ;
+background-color: #D3E8F2;
+
+}
+#index #header a,h1{
+font-family: serif;
+float: right;
+margin-right: 5px;
+}
+h1{
+color: #3887C7;
+}
+#index #header a{
+margin-top: 20px;
+margin-right: 90px;
+
+}
+#center{
+		width: 950px;
+           margin-right: 1px;
+}
+#center #rtl{
+	float: right;
+	width: 280px;
+	height: 500px;
+	border: 2px solid #C0DEED ;
+   background-color: #F9F9F9;
+   margin-top: 20px;
+   margin-right: -120px;
+   -webkit-border-radius: 10px;
+-webkit-border-top-left-radius: 130px;
+-webkit-border-bottom-right-radius: 130px;
+-moz-border-radius: 10px;
+-moz-border-radius-topleft: 130px;
+-moz-border-radius-bottomright: 130px;
+border-radius: 10px;
+border-top-left-radius: 130px;
+border-bottom-right-radius: 130px;
+}
+#center #rtl .nav{
+margin-top: 50px;
+margin-right: 5px;
+width: 240px;
+font-size: 25px;
+}
+#center #rtl i{
+margin-top: 7px;
+}
+#center #ltr{
+		float: right;
+	width: 630px;
+	height: 500px;
+	border: 2px solid #C0DEED ;
+   background-color: #F9F9F9;
+   margin-top: 20px;
+   margin-right: 1px;
+-webkit-border-radius: 130px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius: 130px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomright: 10px;
+border-radius: 130px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+#center #ltr form{
+	margin-top: 20px;
+	
+	 }
+#center #ltr h3{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	padding-right: 60px;
+		font-family: serif;
+	font-size: 30px;
+	color: #0088CC;
+	 }
+#center #ltr form textarea {
+	width: 400px;
+	
+	 }
+#center #ltr #statistics {
+	margin-top: 1px;
+	padding-right: 50px;
+	
+	 }
+#center #ltr #statistics h3{
+	margin-top: 50px;
+	padding-right: 50px;
+	font-family: serif;
+	font-size: 30px;
+	color: #0088CC;
+	 }
+#center #ltr #statistics h5{
+	margin-top: 50px;
+	padding-right: 50px;
+	font-family: serif;
+	font-size: 30px;
+	color: #2F96B4;
+	 }
+#center #ltr #statistics {
+	margin-top: 60px;
+	 }
+
+#msg{
+
+margin-right: 190px;
+margin-top: 50px;
+}
+#website{
+
+margin-right: 190px;
+margin-top: 50px;
+}
+#manager{
+
+margin-right: 170px;
+margin-top: 10px;
+}
+
+#tabletwi{
+width: 700px;
+margin-right: 60px;
+margin-top: 90px;
+
+}
+
+#cc{
+	float: right;
+margin-top: 10px;
+margin-right: 500px;
+
+}

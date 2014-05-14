@@ -1,0 +1,40 @@
+  <div id="tabletwi"  style="	border: 2px solid #C0DEED ;width:500px; height:300px; overflow: auto;">
+    <form action="addSection.php" method="POST" class="form-horizontal">
+    <div class="control-group">
+    <label class="control-label" for="Section"> أضافة قسم :</label>
+
+    <input name="Section" type="" id="Section">
+    <button type="submit" class="btn btn-success">أنشاء</button>
+
+ </div>
+    </form>
+
+   <table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>اسم القسم</th>
+    <th> تعديلات</th>
+    </tr>
+    </thead>
+    <tbody>
+<?php
+require_once('./../config/dbconfig.php');
+$tweetsT = mysql_query("SELECT * FROM `section`") or die(mysql_error());
+
+while($rows = mysql_fetch_assoc($tweetsT))
+{
+//	$rows['id'] 	$rows['name'] 	$rows['tweet']
+echo '
+    <tr>
+    <td><br />'.$rows['name'].'</td>
+     <td><br /><a class="btn btn-danger" href="DSection.php?id='.$rows['id'].'" >جذف</a> </td>
+    </tr>
+	';
+}
+?>
+    </tbody>
+    </table>
+
+
+
+  </div>

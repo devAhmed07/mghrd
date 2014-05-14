@@ -1,0 +1,41 @@
+<div id="center">
+  <a style=" margin-top: 20px;margin-right: 90px;" class="btn btn-large disabled" > جدول التغريدات :</a>
+  <div id="tabletwi">
+
+   <table class="table table-bordered">
+    <thead>
+    <tr>
+    <th> نص التغريده</th>
+    <th> تعديلات</th>
+    </tr>
+    </thead>
+    <tbody>
+<?php
+require_once('config/dbconfig.php');
+@$access_token_oauth_token = $_SESSION['access_token']['oauth_token'] ;
+
+$tweetsU = mysql_query("SELECT * FROM `tweetsU` WHERE `accessToken` LIKE '$access_token_oauth_token' ") or die(mysql_error());
+
+while($rows = mysql_fetch_assoc($tweetsU))
+{
+//	$rows['id'] 	$rows[' timestamp'] 	$rows['tweet']
+echo '
+    <tr>
+    <td><textarea style="width: 350px; height: 60px;" rows="4">'.$rows['tweet'].'</textarea></td>
+     <td><br /><a class="btn btn-danger" href="tweetTD.php?id='.$rows['id'].'" > حذفها</a> </td>
+    </tr>	
+	';
+}
+?>
+    </tbody>
+    </table>
+
+
+  
+  </div>
+  <div style=" margin-top: 20px;margin-right: 90px;">
+  <a class="btn btn-large btn-success" href="tweetT.php" > جدولة تغريدة جديدة</a>
+    <a class="btn btn-large btn-info" href="index.php" > العودة للرئيسية</a>
+  </div>
+
+</div>

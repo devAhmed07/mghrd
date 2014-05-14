@@ -1,0 +1,84 @@
+
+#body{
+
+background: #F2F0F1 url('template/t.ipg') repeat;
+
+}
+#center {
+border: 5px solid #B0D4E5;
+width: 600px;
+height: 490px; 
+ margin: 0px auto ;
+  margin-top: 10px;
+-webkit-border-radius: 130px;
+-webkit-border-top-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-moz-border-radius: 130px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-bottomright: 20px;
+border-radius: 130px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+ }
+
+  #center #buttons {
+text-decoration:none;
+ }
+ #center #buttons a{
+		float: right;
+		margin-right: 50px;
+		margin-top: 90px;
+ }
+ 
+ #website{
+margin-right: 50px;
+margin-top: 50px;
+ font-size: 60px;
+ color: #00ACF6;
+ 
+ }
+#buttons #img1{
+
+margin-right: 120px;
+margin-top: 50px;
+
+}
+ #twitter{
+ 	border: 1px solid #B0D4E5;
+  margin-right: 250px;
+  width: 300px;
+  height: 90px;
+  color: #36CFF9;
+-webkit-border-radius: 100px;
+-webkit-border-top-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-moz-border-radius: 100px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-bottomright: 20px;
+border-radius: 100px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+ }
+ #twitter #twittera{
+ 	margin: 5px 50px;
+   width: 200px;
+  height: 90px;
+  float: right;
+ text-align: right;
+ }
+ #tabletwi{
+ margin-top: 30px;
+ margin-right: 60px;
+width: 500px;
+border: 2px solid #C0DEED ;
+width:500px;
+height:300px;
+overflow: auto;
+
+}
+#cc{
+margin-top: 10px;
+margin-right: 500px;
+
+}
+

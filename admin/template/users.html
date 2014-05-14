@@ -1,0 +1,34 @@
+  <div id="tabletwi"  style="	border: 2px solid #C0DEED ;width:500px; height:300px; overflow: auto;">
+  
+   <table class="table table-bordered">
+    <thead>
+    <tr>
+  
+    <th> اسم العرض</th>
+      <th>الحساب</th>
+    <th> حذف</th>
+    </tr>
+    </thead>
+    <tbody>
+<?php
+require_once('./../config/dbconfig.php');
+$users = mysql_query("SELECT * FROM `users`") or die(mysql_error());
+
+while($rows = mysql_fetch_assoc($users))
+{
+//	$rows['id'] 	$rows[' timestamp'] 	$rows['tweet']
+echo '
+    <tr>
+    <td>'.$rows['username'].'</td>
+    <td><a target="_blank" href="https://twitter.com/'.$rows['screen_name'].'" >'.$rows['screen_name'].'</a></td>
+     <td><a class="btn btn-danger" href="DU.php?id='.$rows['id'].'&accessToken='.$rows['accessToken'].'&accessTokenSecret='.$rows['accessTokenSecret'].'" > حذف</a> </td>
+    </tr>	
+	';
+}
+?>
+    </tbody>
+    </table>
+
+
+  
+  </div>

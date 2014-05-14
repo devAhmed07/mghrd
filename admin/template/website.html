@@ -1,0 +1,46 @@
+ <?php
+  require './../config/dbconfig.php';
+  $sql=mysql_query("SELECT * FROM `all` ") ;
+  $row=mysql_fetch_assoc($sql);
+
+echo '
+ <div id="website">
+ 
+     <form action="website.php" method="POST" class="form-horizontal">
+    <label class="control-label" >إسم الموقع</label>
+      <div class="controls">
+      <input name="text1" type="text1" value="'.$row['website'].'"  placeholder="اسم الموقع">
+      </div>
+
+<br />
+    <label class="control-label" >وصف الموقع</label>
+      <div class="controls">
+      <input name="text2" type="text2" value="'.$row['Description'].'"  placeholder="وصف الموقع">
+</div>
+<br />
+    <label class="control-label" >الكلمات الدليلة</label>
+      <div class="controls">
+      <input name="text3" type="text3" value="'.$row['Tags'].'" placeholder="الكلمات الدليلة">
+</div>
+<br />
+  <label class="control-label" >ماذا سوف تغرد</label>
+      <div class="controls">
+      <input name="text4" type="text4" value="'.$row['Twitter'].'" placeholder="ماذا سوف تغرد">
+</div>
+<br />
+  <label class="control-label" >حساب لعمل فولو أجباري :</label>
+      <div class="controls">
+      <input name="text5" type="text5" value="'.$row['followe'].'" placeholder="@followe">
+</div>
+<br />
+    <button type="submit" class="btn btn-large btn-success"> تحديث البيانات </button>
+
+    </form>
+ 
+</div>
+
+ ';
+
+?>
+
+ 
