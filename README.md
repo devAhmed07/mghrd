@@ -1,10 +1,18 @@
-
-<h2> سكربت مغرد للتغريد التلقائي وجدولة التغريدات </h2>
-
- 			<a href="https://www.waseethost.com/support/knowledgebase.php?action=displayarticle&amp;id=2">أنشاء تطبيق تويتر للربط السكربت بتويتر</a></h3>
-		<h3>
-			<a href="https://www.waseethost.com/support/knowledgebase.php?action=displayarticle&amp;id=5">تركيب سكربت التغريد التلقائي بصور</a></h3>
-		<h3>
-			<a href="https://www.waseethost.com/support/knowledgebase.php?action=displayarticle&amp;id=6">حل مشكلة Something wrong happened</a></h3>
-		<h3>
-			<a href="https://www.waseethost.com/support/knowledgebase.php?action=displayarticle&amp;id=10">شرح تحميل سكربتات الوسيط هوست</a></h3>
+<h2 dir="rtl" style="text-align: right;">
+			<span style="color: rgb(255, 0, 0);">سكربت التغريد التلقائي وجدولة التغريد </span></h2>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">الهدف بشكل عام من هذا السكربت هو ادارة حسابات تويتر بشكل سهل وبسيط </span></h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">المميزات :</span></h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">1. يحتوي على نظام طوبرة / عندما يصل عدد المستخدمين مثل الى 1000000 الف سوف يعمل السكربت معك دون مشاكل ان شاء الله .</span></h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">2.يمكن اضافة عدد لا نهاية من الاقسام / حيث يقوم المشترك بالاشتراك في احد الاقسام المتاحة في قوم السكربت من خلال مخزن كبير ملي بتغريد بتغريد عنه في اوقات هو يحددها مثل ساعة - ساعتين ...الخ</span></h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">3.نظام قوالب بسيطه جدا فسكربت خفيف جدا وبسيط</span></h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">4.جدولة التغريد / حيث يمكن للمشتركين من كتابة تغريدات وجدولتها ويقوم السكربت بانزال التغريدة في الوقت المحدد .</span></h3>
+		<h3 dir="rtl">
+			&nbsp;</h3>
+		<h3 dir="rtl">
+			<span style="color: rgb(0, 0, 205);">*** ما زال هناك الكثير اكتشف ذلك بنفسك</span></h3>
