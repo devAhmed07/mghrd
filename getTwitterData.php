@@ -34,12 +34,13 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   $twitter_otoken_secret= $_SESSION['oauth_token_secret'];
 	   $screen_name = $_SESSION['access_token']['screen_name'];
 	   $email='';
-        $uid = $user_info->id;
-        $username = $user_info->name;
+        $uid = $user_info->id;// جلب رقم العضوية
+        $username = $user_info->name; // جلب الاسم
+        // يشيك على العضو في قاعدة البيانات
         $user = new User();
-        $userdata = $user->checkUser($uid, 'twitter', $username,$email,$twitter_otoken,$twitter_otoken_secret,$access_token_oauth_token,$access_token_oauth_token_secret,$screen_name);
+        $userdata = $user->checkUser($uid, 'twitter', $username,$email,$twitter_otoken,$twitter_otoken_secret,$access_token_oauth_token,$access_token_oauth_token_secret,$screen_name,$con);
         if(!empty($userdata)){
-            session_start();
+
             $_SESSION['id'] = $userdata['id'];
             $_SESSION['oauth_id'] = $uid;
             $_SESSION['username'] = $userdata['username'];

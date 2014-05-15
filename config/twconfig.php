@@ -8,9 +8,9 @@
 
 // معلومات التطبيق من تويتر    https://dev.twitter.com/apps
 
-define('YOUR_CONSUMER_KEY', 'yl8JdiLui0aEORuIxCkzA'); // Consumer key
-define('YOUR_CONSUMER_SECRET', 'l7cs7JXypeZRt1kBzYUAlKmBZVOwsQUnouzdmRi8Ks');  //CONSUMER_SECRET
-define('REDIRECTED', 'http://127.0.0.1/mghrd2.5/getTwitterData.php'); //مسار getTwitterData كامل
+define('YOUR_CONSUMER_KEY', 'veTRlhpNEhyq1IJYsS8Xg01OH'); // Consumer key
+define('YOUR_CONSUMER_SECRET', 'U6S9nnLkshEsuDPeylQIPfHjU0ayvckSvJAWtNckToWgsVeTCB');  //CONSUMER_SECRET
+define('REDIRECTED', 'http://127.0.0.1/mghrd/getTwitterData.php'); //مسار getTwitterData كامل
 
 
 #################################################

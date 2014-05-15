@@ -8,8 +8,8 @@
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root'); // مستخدم القاعدة
-define('DB_PASSWORD', ''); // كلمة المرور
-define('DB_DATABASE', 'tw-2-30'); // اسم القاعدة
+define('DB_PASSWORD', 'root'); // كلمة المرور
+define('DB_DATABASE', 'mghrd'); // اسم القاعدة
 
 #################################################
 // ahmed almalki
@@ -18,7 +18,13 @@ define('DB_DATABASE', 'tw-2-30'); // اسم القاعدة
 // http://waseethost.com/
 #################################################
 
-// خلاص وش تدور
-$connection = mysql_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD) or die("فشل الاتصال بقاعدة البيانات");
-$database = mysql_select_db(DB_DATABASE) or die("فشل الاتصال بقاعدة البيانات");
+// بيانات الاتصال بقاعدة البيانات
+$con =mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD,DB_DATABASE);
+// Check connection  فحص حالة الاتصال
+if (mysqli_connect_errno())
+  {
+    echo '<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>';
+  echo "Failed to connect to MySQL: " . mysqli_connect_error() . 'فشل الاتصال بالقاعدة :';
+  }
+
 ?>

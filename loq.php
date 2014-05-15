@@ -15,6 +15,6 @@ if (array_key_exists("login", $_GET)) {
 }
 
   require 'config/dbconfig.php';
-  $sql=mysql_query("SELECT * FROM `all` ") ;
-  $row=mysql_fetch_assoc($sql);
+  $sql = mysqli_query($con,"SELECT * FROM `all` ") ;
+  $row = mysqli_fetch_assoc($sql);
   ?>
