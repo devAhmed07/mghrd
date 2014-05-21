@@ -36,7 +36,7 @@ require_once($template."/header.html");
 
 if(isset($_SESSION['id'])){
 $sqli = "INSERT INTO `tweetsU` (`id`, `timestamp`, `tweet`, `accessToken`, `accessTokenSecret`) VALUES (NULL, '".$timedate."', '".$txtwi."','".$access_token_oauth_token."', '".$access_token_oauth_token_secret."');";
-$sql= mysql_query($sqli) ;
+$sql= mysqli_query($con,$sqli) ;
 echo"<br/> <center>   <img src=\"images/Twitter-Shipping-Box-icon.png\" alt=\"\" ></center><br/>";
 echo"<br/><center><h2>تم جدولة التغريدات</h2></center>";
 echo '<meta http-equiv=\'refresh\' content=\'0; url=tweet.php\' />';

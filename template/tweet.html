@@ -14,9 +14,9 @@
 require_once('config/dbconfig.php');
 @$access_token_oauth_token = $_SESSION['access_token']['oauth_token'] ;
 
-$tweetsU = mysql_query("SELECT * FROM `tweetsU` WHERE `accessToken` LIKE '$access_token_oauth_token' ") or die(mysql_error());
+$tweetsU = mysqli_query($con,"SELECT * FROM `tweetsU` WHERE `accessToken` LIKE '$access_token_oauth_token' ") or die(mysql_error());
 
-while($rows = mysql_fetch_assoc($tweetsU))
+while($rows = mysqli_fetch_assoc($tweetsU))
 {
 //	$rows['id'] 	$rows[' timestamp'] 	$rows['tweet']
 echo '

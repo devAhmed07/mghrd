@@ -14,7 +14,7 @@ $txt4 = $_POST['text4'];
 $txt5 = $_POST['text5'];
 require './../config/dbconfig.php';
 if($_SESSION['admin'] == 1) {
-mysql_query("UPDATE `all` SET `website` = '".$txt1."',
+mysqli_query($con,"UPDATE `all` SET `website` = '".$txt1."',
 `Description` = '".$txt2."',
 `Tags` = '".$txt3."',
 `Twitter` = '".$txt4."',

@@ -12,9 +12,9 @@
     <tbody>
 <?php
 require_once('./../config/dbconfig.php');
-$users = mysql_query("SELECT * FROM `users`") or die(mysql_error());
+$users = mysqli_query($con,"SELECT * FROM `users`") or die(mysql_error());
 
-while($rows = mysql_fetch_assoc($users))
+while($rows = mysqli_fetch_assoc($users))
 {
 //	$rows['id'] 	$rows[' timestamp'] 	$rows['tweet']
 echo '

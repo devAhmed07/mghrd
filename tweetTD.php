@@ -19,7 +19,7 @@ $access_token_oauth_token = $_SESSION['access_token']['oauth_token'] ;
 
 if(isset($_SESSION['id'])){
 $sqli= "DELETE FROM tweetsU WHERE id = '".$id."' AND accessToken = '".$access_token_oauth_token."'";
-$sql= mysql_query($sqli) ;
+$sql= mysqli_query($con,$sqli) ;
 echo mysql_error();
 //echo"<br/> <center>   <img src=\"images/Twitter-Shipping-Box-icon.png\" alt=\"\" ></center><br/>";
 //cho"<br/><center><h2>تم حذفها</h2></center>";

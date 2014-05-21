@@ -1,6 +1,6 @@
 <?php
-$sql=mysql_query("select * from users") ;
-$row=mysql_num_rows($sql);
+$sql=mysqli_query($con,"select * from users") ;
+$row=mysqli_num_rows($sql);
 ?>
 <div id="statistics">
 <h3>إحصائيات</h3>

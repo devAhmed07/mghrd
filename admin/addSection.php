@@ -18,7 +18,7 @@ require_once('./../config/dbconfig.php');
 
 
 
-$sql= mysql_query("INSERT INTO `section` (`name`) VALUES ('".$name."')") ;
+$sql= mysqli_query($con,"INSERT INTO `section` (`name`) VALUES ('".$name."')") ;
 
 echo '<head><meta charset="UTF-8"></head>';
 echo"<br/> <center>   <img src=\"./../images/Twitter-Shipping-Box-icon.png\" alt=\"\" ></center><br/>";

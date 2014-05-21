@@ -1,8 +1,8 @@
 <?php
 require_once('config/dbconfig.php');
 @$access_token_oauth_token = $_SESSION['access_token']['oauth_token'] ;
-$users = mysql_query("SELECT * FROM `users` WHERE `accessToken` LIKE '$access_token_oauth_token' LIMIT 0 , 1 ") or die(mysql_error());
-$users = mysql_fetch_assoc($users);
+$users = mysqli_query($con,"SELECT * FROM `users` WHERE `accessToken` LIKE '$access_token_oauth_token' LIMIT 0 , 1 ") or die(mysql_error());
+$users = mysqli_fetch_assoc($users);
 ?>
 
 <div id="center">
@@ -19,9 +19,9 @@ $users = mysql_fetch_assoc($users);
 <select name="section">
 <?php
 require_once('config/dbconfig.php');
-$section = mysql_query("SELECT * FROM `section`") or die(mysql_error());
+$section = mysqli_query($con,"SELECT * FROM `section`") or die(mysql_error());
 
-while($rows = mysql_fetch_assoc($section))
+while($rows = mysqli_fetch_assoc($section))
 {
 if($users['section'] == $rows['id']){
 echo '<option selected="selected" value="'.$rows['id'].'">'.$rows['name'].'</option>';
@@ -37,27 +37,21 @@ echo '<option value="'.$rows['id'].'">'.$rows['name'].'</option>';
 <h4>وقت التغريد:</h4>
 <h5>  الوضع الحالي:كل  <?php echo intval($users['next']/60); ?> دقيقة</h5>
 <select name="time">
-  <option value="60">1</option>
-  <option value="300">5</option>
-  <option value="600">10</option>
-  <option value="900">15</option>
-    <option value="1200">20</option>
-      <option value="1500">25</option>
-        <option value="1800">30</option>
-          <option value="2100">35</option>
-            <option value="2400">40</option>
-              <option value="2700">45</option>
-                <option value="3000">50</option>
-                  <option value="3600">ساعة</option>
-                    <option value="7200">ساعتان</option>
+
+                      <option value="3600">ساعة</option>
+                      <option value="7200">ساعتان</option>
                       <option value="10800">3 ساعات</option>
+                      <option value="10800">5 ساعات</option>
+                      <option value="18000">10 ساعات</option>
+                      <option value="86400">كل يوم</option>
+                      <option value="172800">كل يومين</option>
 </select>
 <button type="submit" name="submit" value="time" class="btn btn-large btn-success"> حفظ الإعدادات</button>
 <h4>تعطيل مؤقت:</h4>
 <h5>الحالة: <?php if($users['Muslim']==1){echo 'معطل';}else{echo 'مفعل';} ?></h5>
 <select name="disable">
-  <option value="1">تعطيل</option>
-  <option value="0">تفعيل</option>
+  <option value="0">تعطيل</option>
+  <option value="1">تفعيل</option>
 </select>
 <button type="submit" name="submit" value="disable" class="btn btn-large btn-success"> حفظ الإعدادات</button>
 

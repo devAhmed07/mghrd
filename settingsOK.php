@@ -27,15 +27,15 @@ if(isset($_SESSION['id'])){
 if($submit === 'disable'){
 
 $sqli = "UPDATE `users` SET `Muslim` = '$disable' WHERE `users`.`accessToken` = '$access_token_oauth_token' ;";
-$sql= mysql_query($sqli) ;
+$sql= mysqli_query($con,$sqli) ;
 
 }elseif($submit === 'selected'){
 $sqli = "UPDATE `users` SET `section` = '$section' WHERE `users`.`accessToken` = '$access_token_oauth_token' ;";
-$sql= mysql_query($sqli) ;
+$sql= mysqli_query($con,$sqli) ;
 }else{
 
 $sqli = "UPDATE `users` SET `next` = '$date' WHERE `users`.`accessToken` = '$access_token_oauth_token' ;";
-$sql= mysql_query($sqli) ;
+$sql= mysqli_query($con,$sqli) ;
 
 }
 

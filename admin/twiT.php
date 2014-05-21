@@ -21,7 +21,7 @@ if(!isset($txtwiR) || trim($txtwiR)===''){
 }else{
 
 
-$sql= mysql_query("INSERT INTO `tweetsT` (`id`, `section`, `tweet`, `group`) VALUES (NULL, '".$section."', '".$txtwiR."', '0')") ;
+$sql= mysqli_query($con,"INSERT INTO `tweetsT` (`id`, `section`, `tweet`, `group`) VALUES (NULL, '".$section."', '".$txtwiR."', '0')") ;
 
 }
 }

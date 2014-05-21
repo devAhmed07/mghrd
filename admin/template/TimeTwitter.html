@@ -8,9 +8,9 @@
 
 <?php
 require_once('./../config/dbconfig.php');
-$section = mysql_query("SELECT * FROM `section`") or die(mysql_error());
+$section = mysqli_query($con,"SELECT * FROM `section`") or die(mysql_error());
 
-while($rows = mysql_fetch_assoc($section))
+while($rows = mysqli_fetch_assoc($section))
 {
 
 echo '<option value="'.$rows['id'].'">'.$rows['name'].'</option>

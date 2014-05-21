@@ -13,7 +13,7 @@ $txt3 = $_POST['text3'];
 $txt4 = $_POST['text4'];
 require './../config/dbconfig.php';
 if($_SESSION['admin'] == 1) {
-mysql_query("") ;
+mysqli_query($con,"") ;
 echo '<meta http-equiv=\'refresh\' content=\'0; url=index.php?go=website\' />';
 
 }else{echo ' انت في المكان الخطأ' ;	}

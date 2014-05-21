@@ -14,7 +14,7 @@ $txt1 = $_POST['Password1'];
 $txt2 = $_POST['Password2'];
 
 
-mysql_query("UPDATE `AdminCp` SET `Password` = '".$txt2."' WHERE `AdminCp`.`id` =1  AND  `AdminCp`.`Password`= '".$txt1."' ") ;
+mysqli_query($con,"UPDATE `AdminCp` SET `Password` = '".$txt2."' WHERE `AdminCp`.`id` =1  AND  `AdminCp`.`Password`= '".$txt1."' ") ;
 	
 echo '<meta http-equiv=\'refresh\' content=\'0; url=index.php?go=logoff\' />';
 	

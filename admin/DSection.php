@@ -14,7 +14,7 @@ $id = $_GET['id'];
 $accessToken = $_GET['accessToken'];
 $accessTokenSecret = $_GET['accessTokenSecret'];
 
-$users = mysql_query("DELETE FROM `section` WHERE id = $id") or die(mysql_error());
+$users = mysqli_query($con,"DELETE FROM `section` WHERE id = $id") or die(mysql_error());
 
 
 header("Location: index.php?go=Section");
