@@ -1,10 +1,4 @@
-
-
---
--- Table structure for table `admincp`
---
-
-CREATE TABLE IF NOT EXISTS `admincp` (
+CREATE TABLE IF NOT EXISTS `AdminCp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Username` varchar(200) NOT NULL,
   `Password` varchar(200) NOT NULL,
@@ -16,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `admincp` (
 -- Dumping data for table `admincp`
 --
 
-INSERT INTO `admincp` (`id`, `Username`, `Password`, `Mail`) VALUES
+INSERT INTO `AdminCp` (`id`, `Username`, `Password`, `Mail`) VALUES
 (1, 'admin', '123456', 'protop96@gmail.com');
 
 -- --------------------------------------------------------
@@ -85,7 +79,7 @@ INSERT INTO `section` (`id`, `name`) VALUES
 -- Table structure for table `tweetst`
 --
 
-CREATE TABLE IF NOT EXISTS `tweetst` (
+CREATE TABLE IF NOT EXISTS `tweetsT` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `section` int(30) NOT NULL,
   `tweet` varchar(250) NOT NULL,
@@ -99,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `tweetst` (
 -- Table structure for table `tweetsu`
 --
 
-CREATE TABLE IF NOT EXISTS `tweetsu` (
+CREATE TABLE IF NOT EXISTS `tweetsU` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `timestamp` int(30) NOT NULL,
   `tweet` varchar(250) NOT NULL,
@@ -112,8 +106,6 @@ CREATE TABLE IF NOT EXISTS `tweetsu` (
 -- Dumping data for table `tweetsu`
 --
 
-INSERT INTO `tweetsu` (`id`, `timestamp`, `tweet`, `accessToken`, `accessTokenSecret`) VALUES
-(1, 0, '5555555555', '523391384-se26LD7PIcXCi0QLSptbnv7tLt2WGIyuRo7YHF2I', 'dOcJ6lvuE1WT4asvAQvaAXfYrSCwsqlRZnM9ba2NPf283');
 
 -- --------------------------------------------------------
 
