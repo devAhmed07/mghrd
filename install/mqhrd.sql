@@ -1,3 +1,9 @@
+
+
+--
+-- Table structure for table `admincp`
+--
+
 CREATE TABLE IF NOT EXISTS `AdminCp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Username` varchar(200) NOT NULL,
@@ -76,10 +82,10 @@ INSERT INTO `section` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tweetst`
+-- Table structure for table `tweetsT`
 --
 
-CREATE TABLE IF NOT EXISTS `tweetsT` (
+CREATE TABLE IF NOT EXISTS `tweetst` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `section` int(30) NOT NULL,
   `tweet` varchar(250) NOT NULL,
@@ -90,10 +96,10 @@ CREATE TABLE IF NOT EXISTS `tweetsT` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tweetsu`
+-- Table structure for table `tweetsU`
 --
 
-CREATE TABLE IF NOT EXISTS `tweetsU` (
+CREATE TABLE IF NOT EXISTS `tweetsu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `timestamp` int(30) NOT NULL,
   `tweet` varchar(250) NOT NULL,
@@ -105,7 +111,6 @@ CREATE TABLE IF NOT EXISTS `tweetsU` (
 --
 -- Dumping data for table `tweetsu`
 --
-
 
 -- --------------------------------------------------------
 
