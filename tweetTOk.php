@@ -31,10 +31,12 @@ $timedate = ($date)+(($timeh*60)*60)+($timem*60)+($times);
 
 
 $template = "template";
-require_once($template."/header.html");
+
 
 
 if(isset($_SESSION['id'])){
+ 
+ require_once($template."/header.html");   
 $sqli = "INSERT INTO `tweetsU` (`id`, `timestamp`, `tweet`, `accessToken`, `accessTokenSecret`) VALUES (NULL, '".$timedate."', '".$txtwi."','".$access_token_oauth_token."', '".$access_token_oauth_token_secret."');";
 $sql= mysqli_query($con,$sqli) ;
 echo"<br/> <center>   <img src=\"images/Twitter-Shipping-Box-icon.png\" alt=\"\" ></center><br/>";
@@ -42,14 +44,14 @@ echo"<br/><center><h2>تم جدولة التغريدات</h2></center>";
 echo '<meta http-equiv=\'refresh\' content=\'0; url=tweet.php\' />';
 
 
-
+require_once($template."/footer.html");
 }else{
 	
-require_once($template."/noregistered.html");
+require_once($template."/Login/index.html");
 
 }
 
-require_once($template."/footer.html");
+
 
 
 

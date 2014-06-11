@@ -26,5 +26,5 @@ if (mysqli_connect_errno())
     echo '<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>';
   echo "Failed to connect to MySQL: " . mysqli_connect_error() . 'فشل الاتصال بالقاعدة :';
   }
-
+//mysqli_set_charset($con, "utf8");
 ?>

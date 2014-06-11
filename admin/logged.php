@@ -8,6 +8,7 @@ session_start();
 #################################################
 //header('Location: index.php ');
 require './../config/dbconfig.php';
+header('Location:index.php');
 print $user = mysqli_real_escape_string($con,$_POST['username']);
 print$password = mysqli_real_escape_string($con,$_POST['password']);
 if(!$user && !$password) {
@@ -16,14 +17,14 @@ if(!$user && !$password) {
 
 $sql = mysqli_query($con,"select * from `AdminCp` where `Username` = '$user' and `Password` = '$password' LIMIT 1") ;
 $row = mysqli_fetch_assoc($sql);
-print_r($row);
+//print_r($row);
 //print_r($_POST);
 if($user == $row['Username']  && $password == $row['Password']){
 	$_SESSION['admin'] = 1;
-    header('Location:index.php');
+
 }else {
 	$_SESSION['admin'] = '';
-print_r($_POST);
+//print_r($_POST);
 }
 }
 

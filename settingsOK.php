@@ -19,7 +19,7 @@ require_once('config/dbconfig.php');
 
 
 $template = "template";
-require_once($template."/header.html");
+
 
 
 if(isset($_SESSION['id'])){
@@ -39,22 +39,22 @@ $sql= mysqli_query($con,$sqli) ;
 
 }
 
+require_once($template."/header.html");
 
 
 
-echo '<head><meta charset="UTF-8"></head>';
 echo"<br/> <center>   <img src=\"images/Twitter-Shipping-Box-icon.png\" alt=\"\" ></center><br/>";
 echo"<br/><center><h2>تم تعديل القيم بنجاج</h2></center>";
 echo '<meta http-equiv=\'refresh\' content=\'0; url=settings.php\' />';
 
-
+require_once($template."/footer.html");
 }else{
 	
-require_once($template."/noregistered.html");
+require_once($template."/Login/index.html");
 
 }
 
-require_once($template."/footer.html");
+
 
 
 

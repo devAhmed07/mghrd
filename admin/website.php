@@ -23,6 +23,8 @@ echo '<meta http-equiv=\'refresh\' content=\'0; url=index.php?go=website\' />';
 
 }else{echo ' انت في المكان الخطأ' ;	}
 
+
+
  ?>
  
  

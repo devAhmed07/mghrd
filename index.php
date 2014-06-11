@@ -23,17 +23,17 @@ echo'';
 
 
 $template = "template";
-require_once($template."/header.html");
-if(isset($_SESSION['id'])){
-require_once($template."/registered.html");
 
+if(isset($_SESSION['id'])){
+require_once($template."/header.html");
+require_once($template."/registered.html");
+require_once($template."/footer.html");
 
 }else{
 	
-require_once($template."/noregistered.html");
+require_once($template."/Login/index.html");
 
 }
 
-require_once($template."/footer.html");
 
 ?>
