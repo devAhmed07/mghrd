@@ -14,32 +14,10 @@
 <p></p>
 <p></p>
 <p dir="rtl" style="text-align: right;">احمد المالكي :)</p>
-<h3 dir="rtl" style="text-align: right;"><a href="https://www.waseethost.com"> الوسيط هوست </a></h3>
+<h3 dir="rtl" style="text-align: right;">protop96@gmail.com</h3>
 
 </h3>
 <br />
-
-<h1 dir="rtl" style="text-align: right;"><a href="http://www.mghrd.com/Released/"> تحميل النسخة المستقرة </a></h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2 dir="rtl" style="text-align: right;"><a href="https://github.com/protop96/mghrd/archive/master.zip"> للتحميل هذا الاصدار </a></h2>
 <h4 dir="rtl" style="text-align: right;">// لا ننصح بذلك ما زال قيد التجربة </h4>
